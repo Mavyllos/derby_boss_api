@@ -5,6 +5,7 @@ exports.up = (knex) => {
     table.jsonb('membership');
     table.boolean('active');
     table.text('banner_img');
+    table.integer('team_id');
     table.timestamps(true, true);
   });
 };

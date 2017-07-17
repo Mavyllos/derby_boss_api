@@ -3,7 +3,6 @@ exports.up = (knex) => {
     table.increments();
     table.string('name').notNullable().unique();
     table.integer('league_id');
-    table.integer('member_id');
     table.timestamps(true, true);
   });
 };

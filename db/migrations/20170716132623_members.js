@@ -3,10 +3,10 @@ exports.up = (knex) => {
     table.increments();
     table.string('first_name').notNullable();
     table.string('last_name').notNullable();
-    table.string('derby_name').notNullable().unique();
-    table.string('jersey_number').notNullable();
-    table.string('phone').notNullable();
-    table.string('email').notNullable();
+    table.string('derby_name').unique();
+    table.string('jersey_number');
+    table.string('phone');
+    table.string('email');
     table.specificType('password', 'char(60)').notNullable();
     table.jsonb('role').notNullable();
     table.boolean('active');

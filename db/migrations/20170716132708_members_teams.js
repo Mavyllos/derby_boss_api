@@ -1,7 +1,7 @@
 exports.up = (knex) => {
   return knex.schema.createTable('members_teams', table => {
-    table.integer('members_id').notNullable();
-    table.integer('teams_id').notNullable();
+    table.integer('member_id').notNullable();
+    table.integer('team_id').notNullable();
   });
 };
 
