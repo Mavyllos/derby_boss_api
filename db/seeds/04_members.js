@@ -3,7 +3,6 @@ exports.seed = function(knex) {
     .then(() => {
       return knex('members').insert([
         {
-            id: 1,
             first_name: 'Ellen',
             last_name: 'Page',
             derby_name: 'Babe Ruthless',
@@ -18,7 +17,6 @@ exports.seed = function(knex) {
             league_id: 1
         },
         {
-          id: 2,
           first_name: 'Juliette',
           last_name: 'Lewis',
           derby_name: 'Iron Maven',
@@ -33,7 +31,6 @@ exports.seed = function(knex) {
           league_id: 1
         },
         {
-          id: 3,
           first_name: 'Drew',
           last_name: 'Barrymore',
           derby_name: 'Smashley Simpson',
@@ -48,7 +45,6 @@ exports.seed = function(knex) {
           league_id: 1
         },
         {
-          id: 4,
           first_name: 'Andrew',
           last_name: 'Wilson',
           derby_name: 'Razor',
@@ -62,7 +58,6 @@ exports.seed = function(knex) {
           league_id: 1
         },
         {
-          id: 5,
           first_name: 'Sydney',
           last_name: 'Bennett',
           derby_name: 'Kami Kazi',
@@ -77,7 +72,6 @@ exports.seed = function(knex) {
           league_id: 1
         },
         {
-          id: 6,
           first_name: 'Jane',
           last_name: 'Doe',
           derby_name: 'Plain Jane',

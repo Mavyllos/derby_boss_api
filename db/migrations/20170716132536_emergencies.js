@@ -4,8 +4,8 @@ exports.up = (knex) => {
     table.string('contact_name');
     table.string('contact_number');
     table.boolean('insured');
-    table.string('provider_name');
-    table.string('policy_number');
+    table.string('emer_provider_name');
+    table.string('emer_policy_number');
     table.integer('member_id');
     table.timestamps(true, true);
   });

@@ -4,7 +4,7 @@ exports.up = (knex) => {
     table.boolean('ins_required');
     table.date('issue_date');
     table.date('expires');
-    table.string('policy_number');
+    table.string('req_policy_number');
     table.integer('member_id');
     table.timestamps(true, true);
   });

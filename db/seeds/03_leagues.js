@@ -3,7 +3,6 @@ exports.seed = function(knex) {
     .then(() => {
       return knex('leagues').insert([
         {
-          id: 1,
           name: 'Random City Derby Dames',
           membership: {"type": ["Women's Flat Track Derby Association", "USARS"]},
           active: true,
@@ -11,7 +10,6 @@ exports.seed = function(knex) {
 
         },
         {
-          id: 2,
           name: 'Super Fake League No. 2',
           membership: {"type": ["Women's Flat Track Derby Association", "Junior Roller Derby Association", "Men's Roller Derby Association"]},
           active: true,

@@ -19,7 +19,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 // app.use(cookieSession({
-//   name: 'berby-boss',
+//   name: 'derby-boss',
 //   secret: process.env.SESSION_SECRET,
 //   secure: app.get('env') === 'production'
 // }));
@@ -27,13 +27,29 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 const index = require('./routes/index');
 // const dashboard = require('./routes/dashboard');
+const addresses = require('./routes/addresses');
+const emergencies = require('./routes/emergencies');
+const leagues = require('./routes/leagues');
+const members = require('./routes/members');
+const requirements = require('./routes/requirements');
+const teams = require('./routes/teams');
+// const register = require('./routes/register');
+// const users = require('./routes/users');
 
 app.use('/', index);
 // app.use('/dashboard', dashboard);
+app.use('/addresses', addresses);
+app.use('/emergencies', emergencies);
+app.use('/leagues', leagues);
+app.use('/members', members);
+app.use('/requirements', requirements);
+app.use('/teams', teams);
+// app.use('/register', register);
+// app.use('/users', users);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
-  var err = new Error('Not Found');
+  const err = new Error('Not Found');
   err.status = 404;
   next(err);
 });
@@ -45,7 +61,8 @@ app.use(function(err, req, res, next) {
   res.locals.error = req.app.get('env') === 'development' ? err : {};
 
   // display an error in json
-  res.status(err.status || 500).json("error");
+  console.log(err);
+  res.status(err.status || 500).json(err);
 });
 
 module.exports = app;

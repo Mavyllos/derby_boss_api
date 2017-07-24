@@ -3,33 +3,33 @@ exports.seed = function(knex) {
     .then(() => {
       return knex('teams').insert([
         {
-          id: 1,
           name: 'Hurl Scouts',
+          designation: 'Junior',
           league_id: 1,
         },
         {
-          id: 2,
           name: 'Black Widows',
+          designation: 'Local',
           league_id: 1,
         },
         {
-          id: 3,
           name: 'Fight Attendants',
+          designation: 'Local',
           league_id: 1,
         },
         {
-          id: 4,
           name: 'Holy Rollers',
+          designation: 'Local',
           league_id: 1,
         },
         {
-          id: 5,
           name: 'Kung Fu Whip',
+          designation: 'Travel',
           league_id: 1,
         },
         {
-          id: 6,
           name: 'Punny Punchers',
+          designation: 'Travel',
           league_id: 2,
         }
       ]);

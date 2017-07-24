@@ -8,7 +8,7 @@ exports.up = (knex) => {
     table.string('phone');
     table.string('email');
     table.specificType('password', 'char(60)').notNullable();
-    table.jsonb('role').notNullable();
+    table.jsonb('role');
     table.boolean('active');
     table.boolean('eligibility');
     table.text('profile_img');
