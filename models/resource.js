@@ -17,8 +17,12 @@ function ResourceFactory(table) {
       return db(table).where({id}).first();
     }
 
-    // static edit(){
-    //   return db(table).where({id}).first().update(body).returning('*');
+    static edit(id, body){
+      return db(table).update(body).where({id}).returning('*');
+    }
+
+    // static remove(id){
+    //   return db(table).where({id}).del();
     // }
   }
 
