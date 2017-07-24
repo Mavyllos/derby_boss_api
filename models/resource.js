@@ -6,16 +6,20 @@ function ResourceFactory(table) {
 
     static all(){
       console.log('models');
-      return db(table)
+      return db(table);
     }
 
     static create(body){
-      return db(table).insert(body).returning('*')
+      return db(table).insert(body).returning('*');
     }
 
     static show(id){
-      return db(table).where({id}).first()
+      return db(table).where({id}).first();
     }
+
+    // static edit(){
+    //   return db(table).where({id}).first().update(body).returning('*');
+    // }
   }
 
   return Resource;
