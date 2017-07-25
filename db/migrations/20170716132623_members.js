@@ -10,6 +10,7 @@ exports.up = (knex) => {
     table.specificType('password', 'char(60)').notNullable();
     table.jsonb('role');
     table.boolean('active');
+    table.date('dues_paid');
     table.boolean('eligibility');
     table.text('profile_img');
     table.integer('league_id');

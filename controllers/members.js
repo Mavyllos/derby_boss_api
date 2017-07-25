@@ -67,6 +67,7 @@ function addNewMember(req, res, next) {
         password: hashed_password,
         role: req.body.role,
         active: req.body.active,
+        dues_paid: req.body.dues_paid,
         eligibility: req.body.eligibility,
         profile_img: req.body.profile_img,
         league_id: 1
@@ -142,6 +143,7 @@ function editMember(req, res, next) {
     email: req.body.email,
     role: req.body.role,
     active: req.body.active,
+    dues_paid: req.body.dues_paid,
     eligibility: req.body.eligibility,
     profile_img: req.body.profile_img,
     league_id: 1
