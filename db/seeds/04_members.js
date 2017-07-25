@@ -12,7 +12,7 @@ exports.seed = function(knex) {
             password: '$2a$08$C4IDEUfbPmusLcbycreJu..AeEcWyx0HehxKwfQKUXN/vUzv7jDLG',
             role: {"type": ["skater"]},
             active: true,
-            dues_paid: '02/14/2017',
+            dues_paid: '2017-02-14',
             eligibility: true,
             profile_img: 'http://rs996.pbsrc.com/albums/af84/Angelina_Paredes/Ellen%20Page/EllenPageWhipIt_event_main.jpg~c200',
             league_id: 1
@@ -27,7 +27,7 @@ exports.seed = function(knex) {
           password: '$2a$08$C4IDEUfbPmusLcbycreJu..AeEcWyx0HehxKwfQKUXN/vUzv7jDLG',
           role: {"type": ["admin", "coach", "skater"]},
           active: true,
-          dues_paid: '09/24/2016',
+          dues_paid: '2016-09-24',
           eligibility: true,
           profile_img: 'http://pmcmovieline.files.wordpress.com/2011/12/julietteiron1.jpg',
           league_id: 1
@@ -42,7 +42,7 @@ exports.seed = function(knex) {
           password: '$2a$08$C4IDEUfbPmusLcbycreJu..AeEcWyx0HehxKwfQKUXN/vUzv7jDLG',
           role: {"type": ["skater"]},
           active: true,
-          dues_paid: '01/18/2017',
+          dues_paid: '2017-01-18',
           eligibility: true,
           profile_img: 'http://m.aceshowbiz.com/webimages/still/preview/whip_it_24.jpg',
           league_id: 1
@@ -56,7 +56,7 @@ exports.seed = function(knex) {
           password: '$2a$08$C4IDEUfbPmusLcbycreJu..AeEcWyx0HehxKwfQKUXN/vUzv7jDLG',
           role: {"type": ["admin", "coach"]},
           active: true,
-          dues_paid: '11/15/2016',
+          dues_paid: '2016-11-15',
           eligibility: true,
           profile_img: 'http://1.bp.blogspot.com/-c0Ym_jKvZ1E/TlCx7F_-HaI/AAAAAAAADEw/Qn3rwsBwCx0/s1600/WhipIt6.JPG',
           league_id: 1
@@ -71,7 +71,7 @@ exports.seed = function(knex) {
           password: '$2a$08$C4IDEUfbPmusLcbycreJu..AeEcWyx0HehxKwfQKUXN/vUzv7jDLG',
           role: {"type": ["skater"]},
           active: true,
-          dues_paid: '08/21/2016',
+          dues_paid: '2016-08-21',
           eligibility: true,
           profile_img: 'http://images.cinemaring.com/upload/upload_screenshots/images/cr_actors/8/8/8/0fd2b530081b5e13133a0ce3b6ebf59b.jpg',
           league_id: 1
@@ -86,7 +86,7 @@ exports.seed = function(knex) {
           password: '$2a$08$C4IDEUfbPmusLcbycreJu..AeEcWyx0HehxKwfQKUXN/vUzv7jDLG',
           role: {"type": ["skater"]},
           active: true,
-          dues_paid: '03/14/2017',
+          dues_paid: '2016-05-01',
           eligibility: true,
           profile_img: 'http://images.cinemaring.com/upload/upload_screenshots/images/cr_actors/8/8/8/0fd2b530081b5e13133a0ce3b6ebf59b.jpg',
           league_id: 2
