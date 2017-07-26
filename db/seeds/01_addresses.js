@@ -55,6 +55,36 @@ exports.seed = function(knex) {
           state: 'FL',
           zip: 32466,
           league_id: 2
+        },
+        {
+          line_1: '78 Fairfield Ave.',
+          line_2: 'Suite 405',
+          city: 'Warner Robins',
+          state: 'GA',
+          zip: 31088,
+          member_id: 9
+        },
+        {
+          line_1: '283 Selby Ave.',
+          city: 'West Springfield',
+          state: 'MA',
+          zip: 01089,
+          member_id: 7
+        },
+        {
+          line_1: '23 Brook Rd.',
+          line_2: 'Suite 236',
+          city: 'Lititz',
+          state: 'PA',
+          zip: 17543,
+          member_id: 6
+        },
+        {
+          line_1: '36 Durham Circle',
+          city: 'Spartanburg',
+          state: 'SC',
+          zip: 29301,
+          member_id: 8
         }]);
     });
 };

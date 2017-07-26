@@ -90,6 +90,51 @@ exports.seed = function(knex) {
           eligibility: true,
           profile_img: 'http://images.cinemaring.com/upload/upload_screenshots/images/cr_actors/8/8/8/0fd2b530081b5e13133a0ce3b6ebf59b.jpg',
           league_id: 2
+        },
+        {
+          first_name: 'Zoe',
+          last_name: 'Bell',
+          derby_name: 'Bloody Holly',
+          jersey_number: 'Blank',
+          phone: '5555558765',
+          email: 'BloodyHolly@fakemail.com',
+          password: '$2a$08$C4IDEUfbPmusLcbycreJu..AeEcWyx0HehxKwfQKUXN/vUzv7jDLG',
+          role: {"type": ["Skater"]},
+          active: true,
+          dues_paid: '2017-03-29',
+          eligibility: true,
+          profile_img: 'http://images.cinemaring.com/upload/upload_screenshots/images/cr_actors/8/8/8/0fd2b530081b5e13133a0ce3b6ebf59b.jpg',
+          league_id: 1
+        },
+        {
+          first_name: 'Ari',
+          last_name: 'Graynor',
+          derby_name: 'Eva Destruction',
+          jersey_number: 'Blank',
+          phone: '5555558765',
+          email: 'Destroyer@fakemail.com',
+          password: '$2a$08$C4IDEUfbPmusLcbycreJu..AeEcWyx0HehxKwfQKUXN/vUzv7jDLG',
+          role: {"type": ["Skater"]},
+          active: true,
+          dues_paid: '2017-07-18',
+          eligibility: true,
+          profile_img: 'http://images.cinemaring.com/upload/upload_screenshots/images/cr_actors/8/8/8/0fd2b530081b5e13133a0ce3b6ebf59b.jpg',
+          league_id: 1
+        },
+        {
+          first_name: 'Eve',
+          last_name: 'Cooper',
+          derby_name: 'Rosa Sparks',
+          jersey_number: 'Blank',
+          phone: '5555558765',
+          email: 'Sparky@fakemail.com',
+          password: '$2a$08$C4IDEUfbPmusLcbycreJu..AeEcWyx0HehxKwfQKUXN/vUzv7jDLG',
+          role: {"type": ["Skater"]},
+          active: true,
+          dues_paid: '2017-05-15',
+          eligibility: true,
+          profile_img: 'http://images.cinemaring.com/upload/upload_screenshots/images/cr_actors/8/8/8/0fd2b530081b5e13133a0ce3b6ebf59b.jpg',
+          league_id: 1
         }]);
     });
 };
